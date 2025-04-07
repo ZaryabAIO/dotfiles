@@ -1,0 +1,190 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+i {
+  color: rgb(115 130 175 / 95%);
+  margin-right: 7px;
+}
+
+body {
+  color: rgb(203, 166, 247);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+div,
+span,
+p {
+  cursor: default;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid rgb(255 255 255 / 5%); */
+  /* background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%)); */
+  background: transparent;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 1vw;
+}
+
+.workspaces-group,
+.date-time,
+.system-stats {
+  display: flex;
+  align-items: center;
+}
+
+.date-time {
+  justify-self: center;
+}
+
+.system-stats {
+  justify-self: end;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.paused-button,
+.network,
+.memory,
+.cpu,
+.battery {
+  margin-right: 20px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: rgb(255 255 255 / 8%);
+  margin-right: 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+  }
+
+  &.focused,
+  &:hover {
+    background: rgb(255 255 255 / 8%);
+  }
+}
+
+.workspace:nth-child(1) {
+  color: rgba(243, 139, 168, 1);
+}
+
+.workspace:nth-child(2) {
+  color: rgba(203, 166, 247, 1);
+}
+
+.workspace:nth-child(3) {
+  color: rgb(249, 226, 175, 1);
+}
+
+.workspace:nth-child(4) {
+  color: rgb(137, 180, 250, 1);
+}
+
+.workspace:nth-child(5) {
+  color: rgba(243, 139, 168, 1);
+}
+
+.workspace:nth-child(6) {
+  color: rgba(203, 166, 247, 1);
+}
+
+.workspace:nth-child(7) {
+  color: rgb(249, 226, 175, 1);
+}
+
+.workspace:nth-child(8) {
+  color: rgb(137, 180, 250, 1);
+}
+
+.workspace:nth-child(9) {
+  color: rgba(243, 139, 168, 1);
+}
+
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  background: rgb(255 255 255 / 15%);
+  color: rgba(203, 166, 247, 1);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #900029;
+}
+
+.battery {
+  position: relative;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 7px;
+  left: -8px;
+  top: 3px;
+}
+
+.network,
+.network i {
+  color: rgba(243, 139, 168, 1);
+}
+
+.memory,
+.memory i {
+  color: rgba(203, 166, 247, 1);
+}
+
+.cpu,
+.cpu i {
+  color: rgb(249, 226, 175, 1);
+}
+
+.battery,
+.battery i {
+  color: rgb(137, 180, 250, 1);
+}
+
+.weather, .weather i {
+  color: rgb(203, 166, 247);
+}
